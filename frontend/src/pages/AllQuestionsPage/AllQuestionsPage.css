@@ -1,0 +1,34 @@
+/* HomePage.css */
+.home-container {
+    display: flex;
+    justify-content: space-between; /* Đảm bảo các phần tử con nằm ngang */
+}
+
+.home-container-2 {
+    flex-grow: 1; /* Đảm bảo phần giữa chiếm không gian còn lại */
+    padding: 50px 0px 20px 0px;
+}
+.questions-title-container{
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử con theo hàng ngang */
+    align-items: center; /* Căn giữa các phần tử theo trục dọc */
+    justify-content: space-between; /* Đẩy h1 sang trái và button sang phải */
+    padding: 10px; /* Tùy chỉnh khoảng cách nếu cần */
+}
+.questions-title {
+    font-weight: 400; /* Nếu không muốn dùng inline style, đặt font-weight ở đây */
+}
+  
+.btn-ask-question {
+    padding: 10px 15px; /* Tùy chỉnh kích thước nút */
+    background-color: #009dff; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 5px; /* Bo góc */
+    cursor: pointer; /* Thêm hiệu ứng con trỏ */
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.btn-ask-question:hover {
+    background-color: #007ac6; /* Hiệu ứng hover */
+}

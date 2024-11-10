@@ -1,0 +1,58 @@
+.home-container {
+  display: flex;
+  justify-content: space-between; /* Đảm bảo các phần tử con nằm ngang */
+}
+.user-details-container{
+  flex-grow: 1;
+  padding: 80px 20px 20px 20px;
+  margin: 5px;
+}
+.user-details-container-1, .user-details-container-2 {
+  display: flex;
+}
+
+.user-profile-avatar-container{
+  width: 30%;
+  background-color: #f0f0f0;
+  border: 1px solid #dadada;
+  text-align: center;
+}
+
+.user-profile-avatar{
+  padding-top: 20px;
+  width: 70%;
+}
+
+.user-profile-section{
+  flex-grow: 1;
+
+  margin-left: 30px;
+}
+
+.user-communities{
+  margin-top: 30px;
+  width: 30%;
+}
+
+.user-top-tags{
+  margin-top: 11px;
+  flex-grow: 1;
+  margin-left: 30px;
+  padding: 20px;
+}
+
+.user-communities h3, .user-top-tags h3{
+  padding: 10px;
+  border-bottom: 1px solid #dadada;
+}
+
+.tag-item{
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #dadada;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+
+}

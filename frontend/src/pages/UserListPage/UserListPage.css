@@ -1,0 +1,62 @@
+.user-container {
+  flex-grow: 1;
+  padding: 50px 20px 20px 20px;
+}
+
+.user-list-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Mỗi hàng có 3 user */
+  gap: 10px; /* Khoảng cách giữa các user */
+}
+
+.user-profile-link {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1 cột cho avatar, 2 cột cho thông tin */
+  align-items: center;
+  padding: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+  height: 90px; /* Giới hạn chiều cao cho mỗi user */
+}
+
+.user-avatar {
+  width: 60px; /* Kích thước avatar cố định */
+  height: 60px;
+  object-fit: cover;
+  margin-right: 5px;
+  padding-left: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa các thông tin */
+  font-size: 12px;
+}
+
+.user-info > p {
+  margin: 5px 0; /* Thêm khoảng cách giữa các dòng */
+}
+
+.user-profile-view {
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  /* Khi màn hình nhỏ (tablet và di động) */
+  .user-list-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 user mỗi hàng */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Khi màn hình rất nhỏ (di động) */
+  .user-list-container {
+    grid-template-columns: 1fr; /* 1 user mỗi hàng */
+  }
+}
